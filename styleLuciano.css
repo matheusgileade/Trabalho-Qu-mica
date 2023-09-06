@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #153dab;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #000000;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #17a8dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.molecule,.functional-group {
+    width: 105px;
+    height: 105px;
+    background-color: #ffffff;
+    margin: 10px auto;
+    cursor: pointer;
+        display: inline-block;
+        margin: 18pt;
+}
+
+.functional-group {
+    display: none;
+}
+
+.imagem {
+    width: 105px;
+    position:relative;
+    left: 0%;
+    top: 5%;
+    height: 105px;
+    
+}
+
+.score, .time {
+    margin-top: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: #ff0000;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.molecule {
+    position: relative;
+    width: 105px; /* Defina a largura desejada */
+    height: 105px; /* Defina a altura desejada */
+    margin: 10 10px 0 50 ; /* Centralizar horizontalmente */
+    margin: 45px;
+    cursor: pointer;
+    float:left;
+    
+
+}
+.molecule:nth-child(-n+3) {
+    margin-right: 20px; /* Aumente o espaço à direita para a terceira molécula */
+}
+
+.imagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    
+    background-image: url('caminho/para/imagem.png');
+    background-size: cover;
+    
+    /* Outros estilos */
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    
+}
+
+
+
+
+
+
+/* Adicione a imagem de fundo correspondente a cada grupo funcional */
+.molecule.ester {
+    background-image: url('caminho/para/ester.png');
+    background-size: cover;
+    display: none;
+}
+
+.molecule.amida {
+    background-image: url('caminho/para/amida.png');
+    background-size: cover;
+    display: none;
+}
+
+.molecule.eter {
+    background-image: url('caminho/para/eter.png');
+    background-size: cover;
+    display: none;
+}
+.molecule.alcool {
+    background-image: url('caminho/para/alcool.png');
+    background-size: cover;
+    display: none;
+}
+
+.molecule.amino {
+    background-image: url('caminho/para/amino.png');
+    background-size: cover;
+    display: none;
+}
+
+.molecule.cetona {
+    background-image: url('caminho/para/cetona.png');
+    background-size: cover;
+    
+}
+.molecule.aldeido {
+    background-image: url('caminho/para/aldeido.png');
+    background-size: cover;
+    display: none;
+}
+
+.molecule.aciCarbox {
+    background-image: url('caminho/para/aciCarbox.png');
+    background-size: cover;
+    display: none;
+}
+
+.molecule.anidritoAcetico {
+    background-image: url('caminho/para/anidritoAcetico.png');
+    background-size: cover;
+    display: none;
+}
+.molecule.aciMetano {
+    background-image: url('caminho/para/aciMetano.png');
+    background-size: cover;
+    display: none;
+}

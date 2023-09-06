@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLuciano.css">
+    <title>Jogo Grupos Funcionais</title>
+    
+</head>
+<body>
+    <h1>Jogo de Grupos Funcionais</h1>
+    <div class="game-container">
+
+        <!-- Moléculas -->
+        <div class="molecule ester droppable", id="1">
+            <div class="image-overlay droppable"></div>
+            <img src="ester.png" class="imagem droppable" alt="Minha Figura">
+            <!--imagem ester-->
+        </div>
+
+        <div class="molecule amida droppable" id="2">
+            <div class="image-overlay droppable"></div>
+            <img src="amida.png" class="imagem droppable" alt="Minha Figura">
+            <!-- Imagem de amida -->
+        </div>
+
+        <div class="molecule eter droppable" id="3">
+            <div class="image-overlay droppable"></div>
+            <img src="eter.png" class="imagem droppable" alt="Minha Figura">
+            <!-- Imagem de eter -->
+        </div>
+        
+        <div class="molecule alcool droppable" id="4">
+            <div class="image-overlay droppable"></div>
+            <img src="alcool.png" class="imagem droppable" alt="Minha Figura">
+            <!--imagem de alcool-->
+        </div>
+
+        <div class="molecule amino droppable" id="5">
+            <div class="image-overlay droppable"></div>
+            <img src="amino.png" class="imagem droppable" alt="Minha Figura">
+            <!-- Imagem de amino -->
+        </div>
+
+        <div class="molecule cetona droppable" id="6">
+            <div class="image-overlay droppable"></div>
+            <img src="cetona.png" class="imagem droppable" alt="Minha Figura">
+            <!-- Imagem de cetona -->
+        </div>
+
+        <div class="molecule aldeido droppable" id="7">
+            <div class="image-overlay droppable"></div>
+            <img src="aldeido.png" class="imagem droppable" alt="Minha Figura">
+            <!-- imagem de aldeido -->
+        </div>
+
+        <div class="molecule aciCarbox droppable" id="8">
+            <div class="image-overlay droppable"></div>
+            <img src="aciCarbox.png" class="imagem droppable" alt="Minha Figura">
+            <!-- Imagem de acidos carboxilicos -->
+        </div>
+
+        <div class="molecule anidritoAcetico droppable" id="9">
+            <div class="image-overlay droppable"></div>
+            <img src=" anidritoAcetico.png" class="imagem droppable" alt="Minha Figura">
+            <!-- imagem de anidritoAcetico -->
+        </div>
+
+        <div class="molecule aciMetano droppable" id="10">
+            <div class="image-overlay droppable"></div>
+            <img src="aciMetano.png" class="imagem droppable" alt="Minha Figura">
+            <!-- Imagem de acidoMetano  -->
+        </div>
+
+            
+
+        <!-- Grupos Funcionais -->
+        <div class="functional-group" draggable="true" id="ester">-COOR</div>
+        <div class="functional-group" draggable="true" id="amida">-CONH2</div>
+        <div class="functional-group" draggable="true" id="eter">-C(=O)OR</div>
+        <div class="functional-group" draggable="true" id="alcool">-OH</div>
+        <div class="functional-group" draggable="true" id="amino">-NH2</div>
+        <div class="functional-group" draggable="true" id="cetona">-C(=O)-</div>
+        <div class="functional-group" draggable="true" id="aldeido">-CHO</div>
+        <div class="functional-group" draggable="true" id="aciCarbox">-COOH</div> 
+        <div class="functional-group" draggable="true" id="anidritoAcetico">-O(CO)O-</div>
+        <div class="functional-group" draggable="true" id="aciMetano">-SO3H</div>
+        
+        <!-- Outros elementos -->
+        <div class="score">Pontuação: <span id="score">0</span></div>
+        <div class="time">Tempo: <span id="time">60</span> seg</div>
+        <button id="start-button">Iniciar Jogo</button>
+        <button id="reset-button">Reiniciar Jogo</button>
+        <button onclick="AleatorizarGrupos()">teste aleatorio</button>
+    </div>
+    <script src="scriptLuciano.js"></script>
+</body>
+</html>
